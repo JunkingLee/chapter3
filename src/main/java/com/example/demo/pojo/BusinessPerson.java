@@ -15,6 +15,9 @@ public class BusinessPerson implements Person{
     @Override
     @Autowired @Qualifier("dog")
     public void setAnimal(Animal animal) {
+        /*
+        @Qualifier  按名称装配bean
+         */
         System.out.println("延迟注入");
         this.animal= animal;
     }
